@@ -1,0 +1,128 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: -webkit-linear-gradient(bottom, #e7617a, #f0788e);
+    background: linear-gradient(to top, #e7617a, #f0788e);
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px rgba(101,33,46,0.33);
+	z-index: 5;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    outline: none;
+}
+
+.slick-prev
+{
+    left: 0;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+
+.slick-next
+{
+    right: 0;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -51px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid #98dcef;
+    border-radius: 50px;
+    outline: none;
+    background: #fff;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li.slick-active button {
+    background: #98dcef;
+}
+@media screen and (max-width:1040px){
+	.slick-dots{
+		bottom:-36px;
+	}
+	.slick-dotted.slick-slider{
+		margin-bottom:36px;
+	}
+	.b1-uslugi-slider>button {
+		top: 80px;
+	}
+	.b1-uslugi-slider.slick-slider.slick-dotted {
+		margin-bottom: 91px;
+	}
+	.b5-slider .slick-dots {
+		bottom: -75px;
+	}
+}

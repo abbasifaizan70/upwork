@@ -1,0 +1,290 @@
+/* Magix button :) */
+
+.mscbButton {
+    all: initial;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50%;
+    opacity: .8;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 20000 !important;
+    background: darkgreen url(https://1show.kz/images/button-icon.gif) center center no-repeat;
+    box-shadow: 0 8px 32px rgba(51, 51, 51, 0.7);
+    border: 2px solid #fff;
+    display: none;
+    margin: 0 -35px 0 0;
+}
+
+.mscbButton:hover {
+    opacity: 1;
+    transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -webkit-transition: all 100ms ease-out;
+    zoom: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Window */
+
+.mscbWindow {
+    all: initial;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+    display:none;
+    z-index: 20000 !important;
+}
+
+.mscbWindow_layout {
+    all: initial;
+    display: table-cell;
+    text-align: center;
+}
+
+.mscbThxMessage {
+    display: none;
+    border-radius: 3px;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,'Segoe UI','Segoe WP','Helvetica Neue','Lucida Grande',Verdana,Tahoma,Arial,sans-serif!important;
+    margin: 0 auto;
+    padding: 90px 20px 40px 20px;
+    font-size: 20px;
+    background: #fff url(https://png.icons8.com/thumbs-up/color/50) top 30px center no-repeat;
+    color: #2b2b2b;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(51, 51, 51, 0.7);
+    -webkit-animation-name: animatescale;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatescale;
+    animation-duration: 0.4s
+}
+
+.mscbThxMessage__title {
+    font-size: 22px;
+    padding-bottom: 7px;
+}
+
+.mscbThxMessage__subtitle {
+    font-size: 18px;
+}
+
+.mscbThxMessage__closeBtn {
+    color: darkgreen;
+    opacity: .3;
+    font: 18px/100% arial, sans-serif;
+    position: absolute;
+    right: 12px; top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mscbThxMessage__closeBtn:after {
+    content: '\2716';
+}
+
+.mscbThxMessage__closeBtn:hover {
+    opacity: 1;
+    color: #000;
+}
+
+
+/* Window content */
+.mscbContent {
+    border-radius: 3px;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,'Segoe UI','Segoe WP','Helvetica Neue','Lucida Grande',Verdana,Tahoma,Arial,sans-serif!important;
+    margin: 0 auto;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(51, 51, 51, 0.7);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Header content */
+.mscbHeader {
+    padding: 15px 20px 5px 60px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: darkgreen url(https://mindsales.kz/question-solid.svg) center left 12px no-repeat;
+}
+
+
+.mscbHeader__closeBtn {
+    color: #000;
+    opacity: .3;
+    font: 18px/100% arial, sans-serif;
+    position: absolute;
+    right: 12px; top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mscbHeader__closeBtn:after {
+    content: '\2716';
+}
+
+.mscbHeader__closeBtn:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.mscbHeader__title {
+    padding: 0; margin: 0;
+    padding-bottom: 5px;
+    font-size: 18px !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+.mscbHeader__subtitle {
+    padding: 0; margin: 0;
+    font-size: 16px !important;
+    color: rgba(255,255,255, .7) !important;
+    line-height: 1 !important;
+    text-align: left !important;
+    padding-bottom: 10px !important;
+}
+
+
+/* Form */
+.mscbForm {
+    padding: 20px 0 30px 0 !important;
+}
+
+.mscbForm__label {
+    display: block !important;
+    padding: 12px 0 !important;
+}
+
+.mscbForm__input {
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 12px !important;
+    border: 2px solid #000 !important;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    width: 50% !important;
+    outline: none !important;
+}
+
+.mscbForm__input:focus {
+    font-size: 16px !important;
+}
+
+.mscbForm__input > input[type='tel'] {
+    font-size: 16px;
+}
+
+.mscbForm__input--error {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+.mscbForm__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block !important;
+    margin: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border: solid #222 0 !important;
+    border-radius: 5px !important;
+    padding: 12px 12px !important;
+    margin-top: 15px !important;
+    cursor: pointer !important;
+    background-color: darkgreen !important;
+    box-shadow: 6px 6px 0 #222 !important;
+    max-width: 150px !important;
+}
+
+.mscbForm__button:hover {
+    color: #fff !important;
+    background-color: darkgreen !important;
+    box-shadow: 2px 2px 0 #222 !important;
+}
+
+/* Animations */
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@-webkit-keyframes animatescale {
+    0% {
+        transform:scale(2);
+        opacity:0;
+    }
+    99.9% {
+        transform:scale(1);
+        opacity:1;
+    }
+    100% {
+        transform:scale(0);
+    }
+}
+
+@keyframes animatescale{
+    0% {
+        transform:scale(2);
+        opacity:0;
+    }
+    99.9% {
+        transform:scale(1);
+        opacity:1;
+    }
+    100% {
+        transform:scale(0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(3px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
+    40%, 60% { transform: translate3d(6px, 0, 0); }
+}
+
+@-webkit-keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(3px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
+    40%, 60% { transform: translate3d(6px, 0, 0); }
+}
+
+/* Desktop styles */
+
+@media (min-width: 0) {
+    .mscbWindow_layout {
+        vertical-align: middle;
+    }
+
+    .mscbContent{
+        max-width: 600px;
+    }
+
+    .mscbButton {
+        display: block;
+    }
+}
