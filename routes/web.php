@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
+
 Route::get('/catalogs', function () {
     return view('catalogs');
 });
